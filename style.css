@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between; /* Přidáno */
+    align-items: center;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a.nav-btn {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.nav-btn:hover {
+    color: beige;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 sloupce */
+    grid-template-rows: auto auto; /* Dvě řady */
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*katalog*/
+
+/* Styl pro okno pro odběr katalogu */
+.modal {
+    display: none; /* Skryjeme okno po načtení stránky */
+    position: fixed; /* Umístíme okno do pevné pozice */
+    z-index: 1; /* Z-index pro zobrazení nad ostatním obsahem */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Částečně průhledné pozadí */
+    overflow: auto; /* Přidáme posuvník, pokud je obsah okna příliš velký */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Obsah okna */
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Tlačítko pro zavření okna */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Tlačítko pro odebírání */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Styl pro formulář */
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="email"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/*katalog*/
